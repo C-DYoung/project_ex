@@ -30,11 +30,10 @@ export default function InputAdornments() {
                 </FormControl>
 
                 <FormControl sx={{ width: '520px', height: '51px'}}>
-                    <TextField id="outlined-basic" label="user_Id" variant="outlined" />
+                    <TextField id="outlined-adornment-userId" variant="outlined" placeholder='이메일을 입력해주세요.' />
                 </FormControl>
                 
                 <FormControl sx={{ width: '520px', height: '56px'}} variant="outlined">
-                    <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                     <OutlinedInput
                         id="outlined-adornment-password"
                         type={showPassword ? 'text' : 'password'}
@@ -50,7 +49,7 @@ export default function InputAdornments() {
                                 </IconButton>
                             </InputAdornment>
                         }
-                        label="Password"
+                        placeholder='비밀번호를 입력해주세요.'
                     />
                 </FormControl>
             </div>
