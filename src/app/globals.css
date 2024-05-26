@@ -1,15 +1,26 @@
 .login-size {
-    width: '520px'; 
-    height: '288px';
-};
+  width: "520px";
+  height: "288px";
+}
 
 .login-size-userId {
-    width: '520px'; 
-    height: '51px';
-    gap: '16px';
-};
+  width: "520px";
+  height: "51px";
+  gap: "16px";
+}
 
 .underline-none {
-    text-decoration: none;
-    color: #000;
-};
+  text-decoration: none;
+  color: #000;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
