@@ -1,10 +1,10 @@
+import { Box } from "@mui/material";
 import Link from "next/link";
-import React from "react";
 
 export function Home() {
   return (
-    <h2>
+    <Box sx={{ fontSize: "1.4rem", fontWeight: "600", height: "30px" }}>
       <Link href="/">home</Link>home, home page
-    </h2>
+    </Box>
   );
 }

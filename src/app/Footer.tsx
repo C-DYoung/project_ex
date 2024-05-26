@@ -1,5 +1,9 @@
-import React from "react";
+import { Box } from "@mui/material";
 
 export function Footer() {
-  return <h2> {"Footer, Footer page"}</h2>;
+  return (
+    <Box sx={{ fontSize: "1.4rem", fontWeight: "600", height: "30px" }}>
+      {"Footer, Footer page"}
+    </Box>
+  );
 }
