@@ -23,13 +23,21 @@ export default function singUp() {
   // };
 
   return (
-    <Box sx={{ m: 1, width: "520px", height: "623px" }}>
+    <Box
+      sx={{
+        m: 1, 
+        width: "520px", 
+        height: "623px", 
+        flexDirection: "column", 
+        display: "flex",
+        gap: 3,
+      }}>
       <FormControl
         sx={{ width: "520px", height: "28px", alignItems: "center" }}
       >
         회원가입
       </FormControl>
-      <FormControl sx={{ width: "520px", height: "51px" }} variant="outlined">
+      <FormControl variant="outlined">
         <FormHelperText id="outlined-userName-helper-text">이름</FormHelperText>
         <OutlinedInput
           id="outlined-adornment-userName"
@@ -40,7 +48,7 @@ export default function singUp() {
           placeholder="이름을 입력해주세요"
         />
       </FormControl>
-      <FormControl sx={{ width: "520px", height: "51px" }} variant="outlined">
+      <FormControl variant="outlined">
         <FormHelperText id="outlined-userId-helper-text">아이디</FormHelperText>
         <OutlinedInput
           id="outlined-adornment-userId"
@@ -52,31 +60,36 @@ export default function singUp() {
         />
       </FormControl>
 
-      <FormControl sx={{ width: "520px", height: "78px" }}>
+      <FormControl>
         <FormHelperText id="outlined-userEmail-helper-text">
           이메일
         </FormHelperText>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}>
           <TextField
-            sx={{ width: "270", height: "51px" }}
+            sx={{ width: "270px", height: "51px" }}
             id="userEmailId"
-            label="example"
+            label="example_Id"
           />{" "}
           @
           <TextField
-            sx={{ width: "219", height: "51px" }}
+            sx={{ width: "219px", height: "51px" }}
             id="userEmailAdress"
-            label="emxaple"
+            label="emxaple_Adress"
           />
         </Box>
       </FormControl>
 
-      <FormControl sx={{ width: "520px", height: "56px" }} variant="outlined">
-        <FormHelperText id="outlined-userId-helper-text">
+      <FormControl variant="outlined">
+        <FormHelperText id="outlined-userPw-helper-text">
           비밀번호
         </FormHelperText>
         <OutlinedInput
-          id="outlined-adornment-password"
+          id="outlined-adornment-userPw"
           type={showPassword ? "text" : "password"}
           endAdornment={
             <InputAdornment position="end">
@@ -94,17 +107,17 @@ export default function singUp() {
         />
       </FormControl>
 
-      <FormControl sx={{ width: "520px", height: "56px" }} variant="outlined">
-        <FormHelperText id="outlined-userId-helper-text">
+      <FormControl variant="outlined">
+        <FormHelperText id="outlined-userPwCheck-helper-text">
           비밀번호 확인
         </FormHelperText>
         <OutlinedInput
-          id="outlined-adornment-password"
+          id="outlined-adornment-userPwCheck"
           type={showPassword ? "text" : "password"}
           endAdornment={
             <InputAdornment position="end">
               <IconButton
-                aria-label="toggle password visibility"
+                aria-label="toggle passwordCheck visibility"
                 onClick={handleClickShowPassword}
                 // onMouseDown={handleMouseDownPassword}
                 edge="end"

@@ -22,7 +22,15 @@ export default function InputAdornments() {
   // };
 
   return (
-    <Box sx={{ width: "520px", height: "288px" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: "520px", 
+        height: "288px",
+        gap: "24px"
+
+      }}>
       <Box sx={{ alignItems: "center" }}>
         <FormControl
           sx={{ width: "520px", height: "28px", alignItems: "center" }}
