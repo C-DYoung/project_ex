@@ -76,6 +76,7 @@ export default function singUp() {
             label="example_Id"
           />{" "}
           @
+          {/* 드롭박스 변경 */}
           <TextField
             sx={{ width: "219px", height: "51px" }}
             id="userEmailAdress"

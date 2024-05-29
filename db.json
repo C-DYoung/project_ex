@@ -1,0 +1,33 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "thema": "testproduct_thema01",
+      "name": "testproduct_name01",
+      "price": "testproduct_price01"
+    },
+    {
+      "id": 2,
+      "thema": "testproduct_thema02",
+      "name": "testproduct_name02",
+      "price": "testproduct_price02"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
